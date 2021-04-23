@@ -1,0 +1,34 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="254.01" height="250" viewBox="0 0 254.01 250">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #333;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        font-size: 31.17px;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 2.44px;
+        font-family: MyriadPro-Regular, Myriad Pro;
+      }
+
+      .cls-4 {
+        letter-spacing: -0.01em;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <rect class="cls-1" x="51.56" y="55.72" width="141.83" height="133.48"/>
+      <path class="cls-2" d="M192.17,56.94V188H52.78v-131H192.17m2.44-2.44H50.34V190.41H194.61V54.5Z"/>
+    </g>
+    <path class="cls-2" d="M122.23,96.82c22.69,0,41.15,18.12,41.15,40.39s-18.46,40.39-41.15,40.39-41.16-18.12-41.16-40.39,18.46-40.39,41.16-40.39m0-2.17c-23.93,0-43.33,19-43.33,42.56s19.4,42.56,43.33,42.56,43.33-19.05,43.33-42.56-19.4-42.56-43.33-42.56Z"/>
+    <text class="cls-3" transform="translate(88.25 86.85) scale(1.12 1)"><tspan xml:space="preserve"> s</tspan><tspan class="cls-4" x="18.95" y="0">t</tspan><tspan x="29.08" y="0">op</tspan></text>
+    <path class="cls-2" d="M137.37,122.87v28.68h-29.3V122.87h29.3m2.58-2.59H105.49v33.86H140V120.28Z"/>
+  </g>
+</svg>

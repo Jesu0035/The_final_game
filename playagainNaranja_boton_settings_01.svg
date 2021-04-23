@@ -1,0 +1,32 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 906 352">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f90;
+      }
+
+      .cls-2 {
+        fill: #fbb03b;
+      }
+
+      .cls-3 {
+        font-size: 149.95px;
+        font-family: Chiller-Regular, Chiller;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        font-size: 218.32px;
+        font-family: Bauhaus93, "Bauhaus 93";
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="68" y="26.04" width="771" height="315.03" rx="114"/>
+  <path class="cls-2" d="M142.24,63.28c25.34-22.67,67.7-14.5,68.85-8.26.93,5.06-25.69,6.39-51.59,30.33-24.72,22.85-28.42,47.48-33.07,46.12C120.45,129.73,116.66,86.17,142.24,63.28Z"/>
+  <path class="cls-2" d="M777.8,302.19c-18.32,15-52.34,1.05-53.71-4.41-1.11-4.43,19.79-1.15,38.45-17.09,17.81-15.21,18.9-35.39,22.68-33.48C790.07,249.67,796.29,287.09,777.8,302.19Z"/>
+  <text class="cls-3" transform="translate(376.93 295.24)">again</text>
+  <text class="cls-4" transform="translate(243.68 203.54)">PLAY </text>
+</svg>

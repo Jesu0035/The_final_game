@@ -1,0 +1,48 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="578.43" height="250" viewBox="0 0 578.43 250">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: #333;
+      }
+
+      .cls-2 {
+        fill: #3c6;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        font-size: 58.04px;
+      }
+
+      .cls-4, .cls-7 {
+        font-family: MyriadPro-Regular, Myriad Pro;
+      }
+
+      .cls-5 {
+        letter-spacing: -0.02em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        font-size: 58.02px;
+        fill: #f03;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <path class="cls-1" d="M143.87,167.79a38.84,38.84,0,0,1-38.78-38.69l0-7.65a38.79,38.79,0,0,1,38.69-38.86l313.56-.72a38.85,38.85,0,0,1,38.87,38.69l0,7.64a38.82,38.82,0,0,1-38.69,38.87Z"/>
+      <path class="cls-2" d="M457.42,83.77a36.94,36.94,0,0,1,36.88,36.79v7.65a36.92,36.92,0,0,1-36.8,37L144,165.89h-.09A36.93,36.93,0,0,1,107,129.09l0-7.64a36.92,36.92,0,0,1,36.8-37l313.56-.71h.09m0-3.8h-.09l-313.56.72a40.66,40.66,0,0,0-40.58,40.77v7.64a40.68,40.68,0,0,0,40.68,40.59H144L457.52,169a40.68,40.68,0,0,0,40.59-40.77l0-7.65A40.67,40.67,0,0,0,457.41,80Z"/>
+    </g>
+    <rect class="cls-3" x="118.72" y="95.5" width="152.26" height="59.02" rx="26.97" transform="translate(-0.29 0.45) rotate(-0.13)"/>
+    <text class="cls-4" transform="translate(132.63 141.38) rotate(-0.13) scale(0.83 1)"><tspan class="cls-5">P</tspan><tspan x="29.43" y="0">oi</tspan><tspan class="cls-6" x="74.87" y="0">n</tspan><tspan x="106.85" y="0">ts</tspan></text>
+    <rect class="cls-3" x="283.14" y="90.98" width="202.26" height="68.42" rx="31.48" transform="translate(-0.29 0.88) rotate(-0.13)"/>
+    <text class="cls-7" transform="matrix(1.04, 0, 0, 1, 358.68, 140.86)">20</text>
+  </g>
+</svg>

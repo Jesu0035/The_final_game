@@ -1,0 +1,750 @@
+body {
+	background-color: white;
+
+}
+
+
+#screen {
+	position: absolute;
+	width: 100vw;
+	height: 56.25vw;
+
+
+}
+
+#game {
+
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+}
+
+#game_background {
+
+
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+
+	background-image: url(backgrund_redone1.svg);
+
+
+}
+
+
+
+
+#game_elements {}
+
+/* positioning elements- tamamon y lugar de los scoops */
+
+#scoop_container1 {
+	position: absolute;
+
+	top: 10vw;
+	left: 10vw;
+}
+
+#scoop_container1 .sprite {
+	width: 10vw;
+	height: 10vw;
+
+	background-image: url(1scoop_chocolate.svg);
+	background-size: 100%;
+}
+
+#scoop_container2 {
+	position: absolute;
+
+	top: 15vw;
+	left: 45vw;
+}
+
+#scoop_container2 .sprite {
+	width: 10vw;
+	height: 10vw;
+
+	background-image: url(2scoop_grape.svg);
+	background-size: 100%;
+}
+
+#scoop_container3 {
+	position: absolute;
+
+	top: 5vw;
+	left: 70vw;
+}
+
+#scoop_container3 .sprite {
+	width: 10vw;
+	height: 10vw;
+
+	background-image: url(3scoop_lemon.svg);
+	background-size: 100%;
+}
+
+#scoop_container4 {
+	position: absolute;
+
+	top: 5vw;
+	left: 55vw;
+}
+
+#scoop_container4 .sprite {
+	width: 10vw;
+	height: 10vw;
+
+	background-image: url(4scoop_orange.svg);
+	background-size: 100%;
+}
+
+#scoop_container5 {
+	position: absolute;
+
+	top: 5vw;
+	left: 25vw;
+}
+
+#scoop_container5 .sprite {
+	width: 10vw;
+	height: 10vw;
+
+	background-image: url(5scoop_stawberry.svg);
+	background-size: 100%;
+}
+
+#scoop_container6 {
+	position: absolute;
+
+	top: 5vw;
+	left: 38vw;
+}
+
+#scoop_container6 .sprite {
+	width: 10vw;
+	height: 10vw;
+
+	background-image: url(6scoop_yellow.svg);
+	background-size: 100%;
+}
+
+#scoop_container7 {
+	position: absolute;
+
+	top: 5vw;
+	left: 50vw;
+}
+
+#scoop_container7 .sprite {
+	width: 10vw;
+	height: 10vw;
+
+	background-image: url(sol.svg);
+	background-size: 100%;
+}
+
+
+
+
+#bomb_container {
+	position: absolute;
+
+	top: 2vw;
+	left: 30vw;
+}
+
+#bomb_container .sprite {
+	width: 15vw;
+	height: 15vw;
+
+	background-image: url(Game_over_melted.svg);
+	background-size: 100%;
+}
+
+/*cono de helado 1'*/
+#heart_container {
+	position: absolute;
+
+	top: 25vw;
+	left: 55vw;
+}
+
+/*cono de helado'*/
+#heart_container .sprite {
+	width: 10vw;
+	height: 10vw;
+	background-image: url(winer.svg);
+	background-size: 100%;
+}
+
+/* Animations */
+
+/* containers can fall ... */
+.falling {
+	animation-name: falling_kf;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+}
+
+@keyframes falling_kf {
+	0% {
+		top: -20vw;
+		opacity: 1;
+	}
+
+	90% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+		top: 40vw;
+	}
+}
+
+.disappear {
+	animation-name: disappear_kf;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes disappear_kf {
+	0% {
+		transform: scale(2);
+	}
+
+	100% {
+		transform: scale(0);
+	}
+}
+
+/* a clicked coin will zoom ... */
+.zoom {
+	animation-name: zoom_kf;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-timing-function: cubic-bezier(.67, .47, .33, 1.46);
+	animation-fill-mode: forwards;
+}
+
+@keyframes zoom_kf {
+	0% {
+		transform: scale(1);
+	}
+
+	20% {
+		transform: scale(.8);
+	}
+
+	60% {
+		opacity: 1;
+	}
+
+	100% {
+		transform: translate(40vw, -40vw) scale(2) rotate(15deg);
+		opacity: 0;
+	}
+}
+
+
+
+
+
+.shake {
+	animation-name: shake_kf;
+	animation-duration: .1s;
+	animation-iteration-count: 3;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+}
+
+@keyframes shake_kf {
+	0% {
+		background-color: transparent;
+		transform: rotate(0) scale(1);
+	}
+
+	10% {
+		background-color: rgba(255, 246, 27, 0.7);
+		transform: rotate(-5deg) scale(1.5);
+	}
+
+	50% {
+		background-color: rgba(255, 165, 0, 0.7);
+		transform: rotate(10deg) scale(1.5);
+	}
+
+	100% {
+		background-color: rgba(255, 0, 0, 0.7);
+		transform: rotate(-10deg) scale(1.5);
+	}
+}
+
+
+.explode {
+	animation-name: explode_kf;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+}
+
+@keyframes explode_kf {
+	0% {
+		transform: scale(1);
+	}
+
+	40% {
+		transform: scale(4);
+
+	}
+
+	100% {
+		transform:rotate(45deg);
+		opacity: 1%;
+
+	}
+
+	/* TODO: Implement a cool explosion-like animation for the bomb! */
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+}
+
+
+
+
+.pause {
+	animation-play-state: paused;
+}
+
+.speed1 {
+	animation-duration: 7s;
+}
+
+.speed2 {
+	animation-duration: 5s;
+}
+
+.speed3 {
+	animation-duration: 7s;
+}
+
+.speed4 {
+	animation-duration: 10s;
+}
+
+#score_board {
+	position: absolute;
+	left: 80vw;
+	top: 8vw;
+	color: black;
+	font-size: 200%;
+
+
+}
+
+#score_board .sprite {
+	width: 15vw;
+	height: 6vw;
+
+	background-image: url(PointsVerde_boton_settings_01.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	z-index: 4;
+
+}
+
+.score1 {
+	position: absolute;
+	display: flex;
+	font-family: sans-serif;
+	font-weight: 600;
+	font-size: 3vw;
+	font-style: normal;
+	top: 1vw;
+	right: 4vw;
+	z-index: 5;
+}
+
+
+
+
+/*.score1 {
+	position:absolute;
+	background-image: url(tryagainNaranja_boton_settings_01.svg);
+	background-repeat: no-repeat;
+	width:15vw;
+    height: 6vw;
+	z-index:0;
+	right: 3vw;
+	top:8vw;
+	
+	
+}*/
+
+/*#score_board2 {
+	position: absolute;
+	right: 1vw;
+	top: 1vw;
+	color: black;
+	font-size: 150%;
+}*/
+
+/*#progress_meter {
+	position: absolute;
+	width: 10vw;
+	height: 1vw;
+	top: 12vw;
+	right:4vw;
+	border: 1px solid white;
+
+	z-index: 4;
+
+}
+
+
+#progress {
+	position: absolute;
+	bottom: 0;
+	height: 100%;
+	background-color: lightgray;
+}
+
+.progress_at_0 {
+	width: 0%;
+}
+
+.progress_at_1 {
+	width: 10%;
+}
+
+.progress_at_2 {
+	width: 20%;
+}
+
+.progress_at_3 {
+	width: 30%;
+}
+
+.progress_at_4 {
+	width: 40%;
+}
+
+.progress_at_5 {
+	width: 50%;
+}
+
+.progress_at_6 {
+	width: 60%;
+}
+
+.progress_at_7 {
+	width: 70%;
+}
+
+.progress_at_8 {
+	width: 80%;
+}
+
+.progress_at_9 {
+	width: 90%;
+}
+
+.progress_at_10 {
+	width: 100%;
+}*/
+
+#energy_board {
+	position: absolute;
+	right: 5vw;
+	top: 15vw;
+	justify-content: flex-end;
+}
+
+#heart {
+	display: flex;
+
+}
+
+.life {
+	width: 5vw;
+	height: 5vw;
+	background-image: url(corazon1.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+
+
+/* time line barr  and animations*/
+#time_board {
+
+	position: absolute;
+	width: 15vw;
+	height: 2vw;
+	top: 21vw;
+	left: 80vw;
+	border: 1px solid white;
+}
+
+#time_container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+
+
+}
+
+#time_sprite {
+	width: 100%;
+	height: 100%;
+	transform-origin: left bottom;
+
+}
+
+.time {
+
+	animation-name: time;
+	animation-duration: 60s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+	animation-fill-mode: backwards;
+}
+
+@keyframes time {
+	0% {
+		transform: scaleX(1);
+		background-color: limegreen;
+	}
+
+	50% {
+		background-color: yellow;
+
+	}
+
+	100% {
+		transform: scaleX(0);
+		background-color: red;
+
+	}
+}
+
+#pause_button {
+	background-image: url(pauseVerde_boton_settings_01.svg);
+	background-size: 100%;
+	width: 15vw;
+	height: 6vw;
+	z-index: 4;
+	position: absolute;
+	left: 80vw;
+	top: 25vw;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+#start {
+	display: flex;
+
+}
+
+#start_screen {
+	position: absolute;
+	background-image: url(backgrund_start_redone_final.svg);
+	background-size: 100%;
+	position: absolute;
+	z-index: 20;
+	height: 56.25vw;
+	width: 100vw;
+
+	top: 0;
+	left: 0;
+	bottom: auto;
+}
+
+.start_button {
+
+	background-image: url(playNaranja_boton_settings_01.svg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 10;
+	height: 10vw;
+	width: 15vw;
+	top: 30vw;
+	left: 43vw;
+	cursor: pointer;
+}
+
+/* SETTINGS SCREEN */
+
+#settings_button {
+	background-image: url(soundNaranja_boton_settings_01.svg);
+	background-size: 100%;
+	width: 15vw;
+	height: 6vw;
+	z-index: 4;
+	position: absolute;
+	left: 80vw;
+	top: 31vw;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+
+#settings_screen {
+	background-image: url(Settings_menu%20-%20Copy.svg);
+	background-size: 100% 100%;
+
+	width: 30vw;
+	height: 15vw;
+	z-index: 4;
+	position: absolute;
+	left: 55vw;
+	top: 20vw;
+	background-repeat: no-repeat;
+	/*visibility: hidden;
+   display: none; */
+}
+
+
+#muteMusic_button {
+	z-index: 4;
+	position: absolute;
+	left: 17vw;
+	top: 7.5vw;
+}
+
+#muteFX_button {
+	z-index: 4;
+	position: absolute;
+	left: 17vw;
+	top: 3vw;
+}
+
+.mute_button {
+	background-image: url(volume_settings_Volume_settings.svg);
+	background-size: 200% 100%;
+	width: 8vw;
+	height: 5.5vw;
+	cursor: pointer;
+	background-repeat: no-repeat;
+
+}
+
+.unmuted {
+	background-position: 0% 0%;
+}
+
+.muted {
+	background-position: 100% 0%;
+}
+
+
+#closeSettings_button {
+	background-image: url(closeBoton_Xboton.svg);
+	background-size: 100%;
+	width: 3vw;
+	height: 3vw;
+	z-index: 4;
+	position: absolute;
+	left: 24vw;
+	top: 0.5vw;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.blur {
+	filter: blur(8px);
+}
+
+.diffuse {
+	filter: opacity(0.3);
+}
+
+
+
+.hide {
+
+	display: none;
+
+}
+
+/* Game Over */
+#gameover_screen {
+	background-image: url(Game_Over_Redone.svg);
+	background-size: 100%;
+	position: absolute;
+	height: 56.25vw;
+	width: 100vw;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	opacity: 1;
+	z-index: 2;
+
+}
+
+#tryagain {
+	background-image: url(tryagainNaranja_boton_settings_01.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 15vw;
+	height: 8vw;
+	top: 38vw;
+	left: 80vw;
+	cursor: pointer;
+	z-index: 2;
+}
+
+
+
+#level_complete {
+	background-image: url(Level_complete_FINAL.svg);
+	background-size: 100% 100%;
+	position: absolute;
+	height: 56.25vw;
+	width: 100vw;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	opacity: 1;
+	z-index: 2;
+}
+
+#playagain {
+	background-image: url(playagainNaranja_boton_settings_01.svg);
+	background-size: 100%;
+	position: absolute;
+	width: 15vw;
+	height: 10vw;
+	top: 32vw;
+	left: 65vw;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	z-index: 2;
+}
+
+
+

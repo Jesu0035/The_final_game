@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>The ice-cream Game </title>
+	<link rel="stylesheet" href="style.css">
+	 <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+
+<body>
+
+	<div id="screen">
+		<div id="game">
+			<div id="game_background"></div>
+
+
+
+			<div id="game_elements">
+				<div id="scoop_container1">
+					<div class="sprite"></div>
+				</div>
+				<div id="scoop_container2">
+					<div class="sprite"></div>
+				</div>
+				<div id="scoop_container3">
+					<div class="sprite"></div>
+				</div>
+				<div id="scoop_container4">
+					<div class="sprite"></div>
+				</div>
+				<div id="scoop_container5">
+					<div class="sprite"></div>
+				</div>
+				<div id="scoop_container6">
+					<div class="sprite"></div>
+				</div>
+
+				<div id="scoop_container7">
+					<div class="sprite"></div>
+				</div>
+
+				<div id="bomb_container">
+					<div class="sprite"></div>
+				</div>
+
+				<div id="heart_container">
+					<div class="sprite"></div>
+				</div>
+
+
+				<div id="score_board">
+					<div class="sprite"></div>
+					<div class="score1">
+						<span id="current_points">
+							0 </span>
+
+					</div>
+
+				</div>
+
+
+				<div id="score_board2">
+					<div id="progress_meter">
+						<div class="sprite"></div>
+						<div id="progress"></div>
+
+
+
+					</div>
+				</div>
+
+
+				<div id="energy_board">
+					<div id="heart">
+						<div id="heart_1" class="life"></div>
+						<div id="heart_2" class="life"></div>
+						<div id="heart_3" class="life"></div>
+					</div>
+
+				</div>
+
+
+
+
+			</div>
+			<div id="game_ui"></div>
+			<audio id="BgMusic" src="sound_backgrund.MP3"></audio>
+			<div id="fx" class="Fx"></div>
+
+			<audio id="pointFX" src="scoops2sound.mp3"></audio>
+			<audio id="pointFX2" src="sol_lost_point.mp3"></audio>
+
+
+
+
+			<div id="pause_button"></div>
+
+
+			<div id="settings">
+				<div id="settings_button"></div>
+
+				<div id="settings_screen">
+					<div id="muteMusic_button" class="mute_button"></div>
+					<div id="muteFX_button" class="mute_button"></div>
+					<div id="closeSettings_button"></div>
+				</div>
+
+
+				<div id="time_board">
+					<div id="time_container">
+						<div id="time_sprite">
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+			<div id="start" class="hide">
+
+				<div id="start_screen">
+					<div class="start_button"> </div>
+					
+
+				</div>
+			</div>
+		</div>
+
+		<div id="gameover">
+			<div id="gameover_screen"></div>
+			<div id="tryagain"></div>
+		</div>
+
+		<div id="level_complete">
+			<div id="playagain"></div>
+
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+
+
+
+
+</body></html>
